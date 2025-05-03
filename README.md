@@ -6,12 +6,6 @@ A simple Ruby CLI gem that provides the `depo` command.
 
 After installation:
 
-```
-depo test
-```
 
 Prints:
-
-```
-Test successful
 ```
