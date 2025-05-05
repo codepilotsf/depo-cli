@@ -5,6 +5,7 @@ require 'pathname'
 require 'depo/utils/color'
 require 'tty-prompt'
 require 'depo/utils/spinner'
+require_relative 'apps_create'
 
 module Depo
   class Apps
@@ -85,7 +86,7 @@ module Depo
       case selection
       when :create
         puts "\n[Create New App selected]"
-        # Future: trigger app creation flow
+        Depo::AppsCreate.run
       else
         puts "\n[Selected app: #{selection}]"
         # Future: trigger app management flow
